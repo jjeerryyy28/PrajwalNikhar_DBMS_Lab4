@@ -163,7 +163,7 @@ VALUES
 		SELECT CUS_ID
         FROM `order`
         GROUP BY CUS_ID
-        HAVING SUM(ORD_AMOUNT) >= 3000
+        WHERE (ORD_AMOUNT) >= 3000
         )
 GROUP BY CUS_GENDER;
 
